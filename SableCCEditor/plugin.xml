@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="SableCC Editor"
+            extensions="grammar"
+            icon="icons/sample.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="br.poli.ecomp.ads.sablecceditor.editors.SableCCEditor"
+            id="br.poli.ecomp.ads.sablecceditor.editors.SableCCEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="br.poli.ecomp.ads.sablecceditor.preferences.SableCCPreferencePage"
+            id="br.poli.ecomp.ads.sablecceditor.preferences.SableCCPreferencePage"
+            name="SableCCEditorPreferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="br.poli.ecomp.ads.sablecceditor.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="br.poli.ecomp.ads.sablecceditor.editors"
+            name="SableCC Wizards">
+      </category>
+      <wizard
+            category="br.poli.ecomp.ads.sablecceditor.editors"
+            class="br.poli.ecomp.ads.sablecceditor.editors.wizards.SableCCWizard"
+            icon="icons/sample.gif"
+            id="br.poli.ecomp.ads.sablecceditor.editors.wizards.SableCCWizard"
+            name="SableCCEditor file">
+      </wizard>
+   </extension>
+   
+   <extension id="myproblem"
+
+    point="org.eclipse.core.resources.markers"
+
+    name="My sample problem">
+        <super type="org.eclipse.core.resources.problemmarker"/>
+        <super type="org.eclipse.core.resources.textmarker"/>
+        <persistent value="true"/>
+
+	</extension>
+
+	<extension
+	         point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+	      <hyperlinkDetector
+	            class="br.poli.ecomp.ads.sablecceditor.editors.opendeclaration.MyHyperlinkDetector"
+	            id="br.poli.ecomp.ads.sablecceditor.editors.opendeclaration.MyHyperlinkDetector"
+	            name="%MyHyperLinkDetector"
+	            targetId="org.eclipse.jdt.ui.javaCode">
+	      </hyperlinkDetector>
+	      
+	</extension>
+
+
+	
+	
+</plugin>
