@@ -2,6 +2,12 @@ package br.poli.ecomp.ads.sablecceditor.editors.color;
 
 import org.eclipse.swt.graphics.RGB;
 
+/**
+ * enumeracao das cores da sintaxe highlight
+ * @author GUSTAVO, RENATO
+ *
+ */
+
 public interface ISableCCConstants {
 	public static final String DIRETORIO_DEFAULT = "C:\\SABLECC";
 	public static final RGB DEFAULT = new RGB(0, 0, 0);
