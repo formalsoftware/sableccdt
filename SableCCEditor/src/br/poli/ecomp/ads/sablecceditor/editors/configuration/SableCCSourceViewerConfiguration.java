@@ -34,6 +34,15 @@ import br.poli.ecomp.ads.sablecceditor.editors.scanner.SableCCPartitionScanner;
 import br.poli.ecomp.ads.sablecceditor.editors.scanner.SableCCScanner;
 import br.poli.ecomp.ads.sablecceditor.preferences.PreferenceConstants;
 
+/**
+ *  Nesta classe são definidas as configuracoes de vizualizacao do codigo.
+ *  
+ *  Ela quarda configuracoes do auto complete, sintax highlight entre outros.
+ *  
+ * @author ALVARO, EVERALDA, FELIPE, JONATHAN, JUVENAL
+ *
+ */
+
 public class SableCCSourceViewerConfiguration extends SourceViewerConfiguration {
 	private SableCCDoubleClickStrategy doubleClickStrategy;
 	private SableCCScanner scanner;
