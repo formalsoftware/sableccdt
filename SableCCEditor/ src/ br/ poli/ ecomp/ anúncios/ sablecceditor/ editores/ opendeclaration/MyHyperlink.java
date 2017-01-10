@@ -7,12 +7,22 @@ import org.eclipse.jface.text.hyperlink.IHyperlink;
 
 import br.poli.ecomp.ads.sablecceditor.editors.SableCCEditor;
 import br.poli.ecomp.adssableccbuilder.builder.Element;
+/ **
+	 * Implementacao de hiperlink em myHiperlink
+	 * @author RODRIGO
+	 *
+	 -benzóico.
 
 public class MyHyperlink implements IHyperlink {
-    private String location;
+    private String location;0
     private IRegion region;
     private SableCCEditor editor;
     private Element definicao;
+/ **
+	 * Pega o MyHiperlink e delimita as regiões
+	 * @author RODRIGO
+	 *
+	 -benzóico.
 
     public MyHyperlink(IRegion region, String text, SableCCEditor editor, Element definicao) {
 
