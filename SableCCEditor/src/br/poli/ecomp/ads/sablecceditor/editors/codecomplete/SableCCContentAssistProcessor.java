@@ -15,6 +15,14 @@ import org.eclipse.jface.text.contentassist.IContextInformationValidator;
 import br.poli.ecomp.ads.sablecceditor.editors.SableCCEditor;
 import br.poli.ecomp.ads.sablecceditor.editors.scanner.SableCCScanner;
 
+/**
+ * Esta classe faz a comparação da palavra que está sendo
+ * digitada e as padavras conhecidas. Isso permite que 
+ * ele possa auto completar as strings.
+ * @author GUSTAVO, RENATO
+ * 
+ */
+
 public class SableCCContentAssistProcessor implements IContentAssistProcessor {
 	
 	private static final char[] AUTO_ACTIVATION_CHARS = new char[] {
