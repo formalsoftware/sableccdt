@@ -20,7 +20,11 @@ import br.poli.ecomp.ads.sablecceditor.SableCCPlugin;
 import br.poli.ecomp.adssableccbuilder.builder.Echo;
 import br.poli.ecomp.adssableccbuilder.builder.MarkParserException;
 
-
+/**
+ * Esta classe refere-se à marcação de erros do código.
+ * @author GUSTAVO, RENATO
+ *
+ */
 public class MarkingErrorHandler
 {
 
@@ -38,7 +42,9 @@ public class MarkingErrorHandler
 		parser = new Echo();
 		this.parser.file = file;
 	}
-
+	/**
+	 * Este método deleta todos os marcadores do código
+	 */
 	public void removeExistingMarkers()
 	{
 		try
@@ -50,6 +56,11 @@ public class MarkingErrorHandler
 			e1.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Este método verifica se há erros nos marcadores.
+	 * @param isFatal
+	 */
 
 	public void markErrors(boolean isFatal)
 	{
