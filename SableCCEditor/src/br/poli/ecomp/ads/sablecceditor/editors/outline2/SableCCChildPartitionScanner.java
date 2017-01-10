@@ -15,6 +15,12 @@ import org.eclipse.jface.text.rules.WhitespaceRule;
 
 import br.poli.ecomp.ads.sablecceditor.editors.rules.SableCCWhitespaceDetector;
 
+/**
+ * Esta classe fará a análise Léxica.
+ * @author GUSTAVO, RENATO
+ *
+ */
+
 public class SableCCChildPartitionScanner extends RuleBasedPartitionScanner {
 	public final static String SABLECC_COMMENT = "__sablecc_comment";
 	public final static String STRING ="__string";
