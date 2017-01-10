@@ -22,6 +22,11 @@ import br.poli.ecomp.adssableccbuilder.builder.Element;
 import br.poli.ecomp.adssableccbuilder.builder.Expressao;
 import br.poli.ecomp.adssableccbuilder.builder.SableCCElements;
 
+/**
+ * Esta classe é o parser do Code Complete
+ * @author GUSTAVO, RENATO
+ *
+ */
 public class SableCCPaserCompletionProcessor implements IContentAssistProcessor {
 	private IFile file;
 	
