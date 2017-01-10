@@ -22,6 +22,11 @@ import br.poli.ecomp.adssableccbuilder.builder.Echo;
 import br.poli.ecomp.adssableccbuilder.builder.Element;
 import br.poli.ecomp.adssableccbuilder.builder.SableCCElements;
 
+/**
+ * Esta classe faz a análise léxica do Code Complete
+ * @author GUSTAVO, RENATO
+ *
+ */
 public class SableCCLexerCompletionProcessor implements
 		IContentAssistProcessor {
 	
